@@ -10,3 +10,8 @@ document.write(8 > 6);
 document.write("<br>");
 document.write(8 < 6);
 console.log(2 + 2);
+console.log(2 > 5);
+document.write('<br>');
+document.write(55 == 100);
+document.write('<br>');
+document.write(5 == 5);

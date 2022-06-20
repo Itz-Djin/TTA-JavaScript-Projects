@@ -43,3 +43,13 @@ document.write('<br>');
 document.write(50 > 55 || 80 < 100);
 document.write('<br>');
 document.write(50 == 55 || 85 >= 90);
+
+// NOT operator assignment
+document.write('<br>');
+document.write('<br>');
+function notFunction() { // Created the function "notFunction"
+    document.getElementById('Not-False').innerHTML = !(55 > 50) // Compares the values of 55 and 50 using the greater than operand and returns false to the html element with the ID of Not-False
+};
+function notTrue() { // Create the function "notTrue"
+    document.getElementById('Not-True').innerHTML = !(45 > 100) // Compares the values of 45 and 100 using the greater than operand and returns true to the html element with the ID of Not_True
+};

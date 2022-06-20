@@ -19,6 +19,8 @@ document.write('<br>');
 document.write('<br>');
 // Triple equal signs assignment
 // Part a) Return true by ensuring to match the data type and value
+document.write('Triple equal signs assignment');
+document.write('<br>');
 document.write("string" === "string"); // A triple equal sign makes a comparison between values based on their data type as well as there value. They both have to be the same to return true, in this case two strings of the same value are equal so this returns true.
 // part b) Return false by writing a different data type and different value
 document.write('<br>');
@@ -29,3 +31,15 @@ document.write('50' === 50); // This as well has seperate data types, although t
 // part d) Return faslse by writin gthe same data type but different value for both
 document.write('<br>');
 document.write(50 === 50); // This has both types of data as numbers as well as their value is both 50, the output is true
+// AND operator assignment
+document.write('<br>');
+document.write('<br>');
+document.write('AND operator assignment');
+document.write('<br>');
+document.write(55 > 20 && 40 < 55);
+document.write('<br>');
+document.write(55 < 20 && 40 < 55);
+document.write('<br>');
+document.write(50 > 55 || 80 < 100);
+document.write('<br>');
+document.write(50 == 55 || 85 >= 90);

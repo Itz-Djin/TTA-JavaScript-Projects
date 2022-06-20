@@ -18,3 +18,4 @@ function voteFunction() { // Created the function "voteFunction"
     canVote = (age < 18) ? "You are not eligible to vote" : "You are eligible to vote"; // Defined canVote variable with ternary operator, which states if the age (18) is less than 18 then print string before colon, else the age is greater than 18 print string after colon
     document.getElementById("Vote").innerHTML = canVote; // This prints the actual string, dependent on value given, to the html element with ID of "Vote"
 };
+

@@ -48,6 +48,11 @@ function thisFunction() {
     document.getElementById('New_and_This').innerHTML = "An elephant is a " + Elephant.Type + ". With " + Elephant.Legs + " Legs" + ". Elephants have hair: " + Elephant.Hair;
 }
 
-
+/*
 //Reserved Keyword Challenge
+document.write('<br>');
+var class = "class"; 
+document.write(class);
+*/
 
+// Nested Functions Assignment

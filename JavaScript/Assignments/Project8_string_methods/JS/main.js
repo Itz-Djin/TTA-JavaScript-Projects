@@ -15,14 +15,44 @@ END OF CONCAT() METHOD PRACTICE/DEMO
 START OF CONCAT() METHOD ASSIGNMENT
 =============================*/
 
-function mySentenceFunction() {
-    var sen1 = "Hello world! ";
+function mySentenceFunction() { // created mySentenceFunction
+    var sen1 = "Hello world! "; // created multiple variables that will be concatenated using the concat() method
     var sen2 = "My name is Christdjin, ";
     var sen2part1 = "and I\'m creating a sentence using ";
     var sen2part2 = "the concat() method. ";
     var sen3 = "So far I\'m enjoying coding, ";
     var sen3part1 = "but there is alot to learn! ";
     var sen4 = "Thanks for reading my sentence!";
-    var multi_Sentences = sen1.concat(sen2, sen2part1, sen2part2, sen3, sen3part1, sen4);
-    document.getElementById('Conc_Assignment').innerHTML = multi_Sentences;
+    var multi_Sentences = sen1.concat(sen2, sen2part1, sen2part2, sen3, sen3part1, sen4); // created variable that utilizes concat() method starting with the sen1 variable
+    document.getElementById('Conc_Assignment').innerHTML = multi_Sentences; // display selected variable in designated HTML element with specified ID
 }
+
+/*============================
+END OF CONCAT() METHOD ASSIGNMENT
+START OF SLICE() METHOD PRACTICE/DEMO
+==============================*/
+
+function slice_Method() { // created slice_Method
+    var Sentence = "All work and no play makes Johnny a dull boy."; // created variable with a string value
+    var Section = Sentence.slice(27, 33); // created a variable that calls upon another variable with a string data type and slices specific points within the designated variable, leaving a single word
+    document.getElementById("Slice").innerHTML = Section;
+}
+
+/*==============================
+END OF SLICE() METHOD PRACTICE/DEMO
+START OF SLICE() METHOD ASSIGNMENT
+================================*/
+
+function mySliceFunction() { // created mySliceFunction
+    var mySentence = "From this sentence we are going to extract the word sentence"; // created variable with long string value to make use of slice() method
+    var sliceSentence = mySentence.slice(10, 19); // created variable utilizing the slice() method on the specified variable
+    var sentenceLength = mySentence.length; // used to get the length of the string that is designated
+    document.getElementById("Slice_Assignment").innerHTML = sliceSentence;
+}
+
+/*==============================
+END OF SLICE() METHOD ASSIGNMENT
+START OF
+================================*/
+
+

@@ -41,7 +41,7 @@ function Age_Function() { // Created Age_Function function
 }
 /*==========================
 END OF ELSE STATEMENTS PRACTICE
-START OF ELSE STATEMENTS ASSIGNMENT
+START OF ELSE STATEMENT ASSIGNMENT
 ============================*/
 function cdFunction() {
     cds = document.getElementById('cd').value;
@@ -53,3 +53,8 @@ function cdFunction() {
     }
     document.getElementById("Amount_of_cds").innerHTML = amount;
 }
+
+/*================================
+END OF ELSE STATEMENT ASSIGNMENT
+START OF
+==================================*/

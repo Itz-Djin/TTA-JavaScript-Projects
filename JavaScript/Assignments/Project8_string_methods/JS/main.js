@@ -52,7 +52,27 @@ function mySliceFunction() { // created mySliceFunction
 
 /*==============================
 END OF SLICE() METHOD ASSIGNMENT
-START OF
+START OF MORE METHODS CHALLENGE
 ================================*/
+
+/* In this challenge I'll define (1) toUpperCase() method and (2) search() method.
+1) toUpperCase() method: this method is a string method, meaning it is to be performed on data types that are strings.
+    It converts an entire string to upper case.
+2) search() method: This method is a string method, it returns the postion of the first occurrence of a specified text in a string
+*/
+function capsFunction() { // created capsFunction
+    var text = document.getElementById("CAPS").innerHTML; // created variable text that designates what HTML element we'll use our method on
+    document.getElementById("CAPS").innerHTML = text.toUpperCase(); // uses the method to create the change in designated HTML element with the toUpperCase() method
+}
+
+function searchFunction() { // created searchFunction
+    var text = "We want the position of the word 'position'" // created variable with string value
+    document.getElementById("Search").innerHTML = text.search('position'); // made use of search() method to specify where the designated word starts in the string
+}
+
+/*================================
+END OF MORE METHODS CHALLENGE
+START OF
+==================================*/
 
 

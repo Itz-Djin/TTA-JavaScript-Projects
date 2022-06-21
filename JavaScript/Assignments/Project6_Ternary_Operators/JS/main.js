@@ -56,3 +56,12 @@ document.write(class);
 */
 
 // Nested Functions Assignment
+function incrementFunction() { // created function "incrementFunction"
+    document.getElementById("Nested_Function").innerHTML = increment(); // added method to change html element with ID of "Nested_Function" to increment() function
+    function increment() { // created increment function
+        var initialNumber = 49; // created variable "initalNumber" which will represent our starting number in the nest function with the value of 49
+        function add_one() { initialNumber++; } // created function "add_one()" in the block inclued "initialNumber" variable which will be incremented by 1 to 50
+        add_one(); // I'm not sure what this is for, be sure to ask instructor. I think it returns or holds? the incremented value after the functions performed
+        return initialNumber; // this returns the final value to the variable initalNumber
+    }
+}

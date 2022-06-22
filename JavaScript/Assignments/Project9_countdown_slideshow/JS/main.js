@@ -36,7 +36,7 @@ function countdown() { // created countdown function
 
     function tick() { // created nested function "tick()"
         seconds = seconds - 1; // created new variable seconds which pulls the seconds value and subtracts it by 1
-        timer.innerHTML;
+        timer.innerHTML = seconds;
         var time = setTimeout(tick, 1000); // pauses the program for 1,000 milliseconds (1 second)
         if (seconds == -1) {
             alert("Time's up!");

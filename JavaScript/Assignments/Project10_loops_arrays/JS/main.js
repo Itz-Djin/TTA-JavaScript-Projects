@@ -169,27 +169,17 @@ BREAK AND CONTINURE CHALLENGE
 2) Continue statement: "jumps over" one iteration in the loop, when a condition is created the continue statement says to skip over that specific conditions point
 */
 
-const fruits = ["Apple", "Banana", "Lychee", "Mango", "Grape", "Honeydew", "Jackfruit", "Orange", "Pear"];
-let spacer = ""; // this I have questions on
-
-list: { // created a list to utilize our fruits array
-    spacer += fruits[0] + "<br>"; 
-    spacer += fruits[1] + "<br>";
-    spacer += fruits[2] + "<br>";
-    spacer += fruits[3] + "<br>";
-    spacer += fruits[4] + "<br>";
-    spacer += fruits[5] + "<br>";
-    spacer += fruits[6] + "<br>";
-    break list; // Once the fruit in index 6 of the fruits array is printed the list stops or breaks out here
-    spacer += fruits[7] + "<br>";
-    spacer += fruits[8] + "<br>";
-}
-document.getElementById("Break").innerHTML = spacer;
-
 let cont2 = ""; // Why do we create a string that is empty, is this similar to why we add a value attribute with no value, were indicating the user to give a valuer, in this case the variable is waiting for a value to be given to it?
 for (let i = 0; i < 10; i++) { // iterates through the for loop as long as the variable i is less than 10
     if (i === 5) { continue; } // once the iterations reach 5 as a value and data type number, it will not show that step when printed, but it will continue after that printing the remaining iterations
     cont2 += "Number " + i + "<br>"; 
 }
 document.getElementById("Continue").innerHTML = cont2;
+
+let break2 = ""; // created variable break2 with empty string
+for (let i = -4; i < 10; i++) { // created for loop where variable i starts at -4, and when variable i is less than 10, it iterates one increment
+    if (i === 5) { break; } // created if statement, when i equals the value of 5 and data type of number, break the loop (End the loop)
+    break2 += "Number " + i + "<br>";
+}
+document.getElementById("Break").innerHTML = break2;
 

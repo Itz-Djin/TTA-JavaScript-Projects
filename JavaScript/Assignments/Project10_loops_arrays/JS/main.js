@@ -102,3 +102,16 @@ function constant_function() { // created constant_function()
     Musical_Instrument.price = "$900"; // Added another property with name of price and value of $900
     document.getElementById("Constant").innerHTML = "The cost of the " + Musical_Instrument.type + " was " + Musical_Instrument.price;
 }
+
+/*========================
+END OF CONST KEYWORD ASSIGNMENT
+START OF LET KEYWORD ASSIGNMENT
+==========================*/
+
+var X1 = 99;
+console.log(X1);
+{
+    let X1 = 88;
+    console.log(X1);
+}
+console.log(X1);

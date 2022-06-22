@@ -1,4 +1,5 @@
 // SWITCH STATEMENT PRACTICE/DEMO
+/*
 function Color_Function() { // Created Color_Function()
     var Color_Output; // Declared Color_Output variable
     var Colors = document.getElementById("Color_Input").value; // created variable Colors which gets its value from the designated ID, where a user can input a given color on the webpage
@@ -21,6 +22,20 @@ function Color_Function() { // Created Color_Function()
             break;
         case "Purple":
             Color_Output = "Purple" + Color_String;
+            break;
+        default:
+            Color_Output = "Please enter a color exactly as written on the above list.";
+    }
+    document.getElementById("Output").innerHTML = Color_Output;
+}
+*/
+function Color_Function() {
+    var Color_Output;
+    var Colors = document.getElementById("Color_Input").value;
+    var Color_String = " is a great color!";
+    switch (Colors) {
+        case Colors:
+            Color_Output = Colors + Color_String;
             break;
         default:
             Color_Output = "Please enter a color exactly as written on the above list.";

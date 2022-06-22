@@ -44,20 +44,45 @@ function lengthPropFunction() { // created lengthPropFunction
 
 /*=============
 END LENGTH PROPERTY CHALLENGE
-FOR LOOP PRACTICE/DEMO
+FOR LOOP ASSIGNMENT
 ===============*/
 
-var Instruments = ["Guitar", "Drums", "Piano", "Bass", "Violin", "Trumpet", "Flute"]; // is this an array?
+var Instruments = ["Guitar", "Drums", "Piano", "Bass", "Violin", "Trumpet", "Flute"]; // is this an array? Yes, it is. 
 var Content = ""; // why do we keep creating a variable with a blank string?
 var Y; // declares initial variable
 function for_Loop() { // created for_Loop() function
-    for (Y = 0; Y < Instruments.length; Y++) { // Use for statement, assigns value 0 to variable Y, uses property length on variable Instruments (Length==7), saying that if Y which starts at 0 is less than that increment it by 1. This is repeated until the condition is met, which is when Y increments 7 times, or the block of code is iterated through 7 times
+    for (Y = 0; Y < Instruments.length; Y++) { // Use for statement, assigns value 0 to variable Y, uses property length on variable Instruments (Length==6), saying that if Y which starts at 0 is less than that increment it by 1. This is repeated until the condition is met, which is when Y increments 7 times, or the block of code is iterated through 7 times. Remember arrays start with the index of 0. There may be 7 values but it begins with the index 0, the last index position would be 6. 
         Content += Instruments[Y] + "<br>"; // what are the brackets for and yielding the Y variable to the instruments?
     }
     document.getElementById("List_of_Instruments").innerHTML = Content;
 }
 
 /*=============
-END FOR LOOP PRACTICE/DEMO
-
+END FOR LOOP ASSIGNMENT
+ARRAY PRACTICE/DEMO
 ===============*/
+
+// Note: Arrays are objects. Meaning they are umbrellad under the object date type (one of the 7 data types in JavaScript)
+function cat_pics() { // created cat_pics() function
+    var Cat_Picture = []; // created object Cat_Picture
+    Cat_Picture[0] = "sleeping"; // This and the below assignments are the properties of the Cat_Picture object
+    Cat_Picture[1] = "playing";
+    Cat_Picture[2] = "eating"; 
+    Cat_Picture[3] = "purring";
+    document.getElementById("Cat").innerHTML = "In this picture, the cat is " + Cat_Picture[2] + ".";
+}
+
+/*=============
+END ARRAY PRACTICE/DEMO
+DOCUMENT.GETELEMENTBYID().INNERHTML ASSSIGNMENT
+===============*/
+
+function array_Function() {
+    var Glasses = [];
+    Glasses[0] = " Ray-Ban ";
+    Glasses[1] = " Gucci ";
+    Glasses[2] = " Tom Ford ";
+    Glasses[3] = " Oakley ";
+    Glasses[4] = " Ace & Tate "
+    document.getElementById("Array").innerHTML = "Some of the top glasses manufacturers are " + Glasses[0] + "and"  + Glasses[1];
+}

@@ -122,11 +122,35 @@ function precisionFunction() { // created precisionFunction
 
 /*====================================
 END OF TOPRECISION METHOD ASSIGNMENT
-START OF NEW METHODS CHALLENGE FOR NUMBER METHODS
+START OF NEW METHODS CHALLENGE FOR NUMBERS
 ======================================*/
 
 /* In this challenge you'll research and describe (1) toFixed() Method and (2) valueOf() method.
 1) tofixed() Method: is a number method which returns a string, with the number written with a specified number of decimals, it also rounds a number to that given number of digits.
-2) valueOf() Method: 
+2) valueOf() Method: Not normally used in the programmers code because it is already the default value set within JavaScript for strings
 */
 
+function fixedFunction() { // created fixedFunction
+    var a = 8.1234; // created variable with number data type
+    document.getElementById("Fixed").innerHTML = a.toFixed(1) + // utilized toFixed() method to specify number of decimals
+       '<br>' + a.toFixed(2) +
+       '<br>' + a.toFixed(3) +
+       '<br>' + a.toFixed(4);
+}
+
+function valueFunction() { // created valueFunction
+    var a = "This will not change"; // created variable with string data
+    var b = a.valueOf(); // created variable that utilizes the valueOf() method on variable a which returns the exact value used in variable a
+    document.getElementById("Value").innerHTML = b; // displays variable b
+}
+
+function identicalValueFunction() { // this function is created as a demo to show it is identical to using the valueOf() method
+    var a = "This will not change";
+    var b = a;
+    document.getElementById("Identical_Value").innerHTML = b;
+}
+
+/*====================================
+END OF NEW METHODS CHALLENGE FOR NUMBERS
+START OF
+======================================*/

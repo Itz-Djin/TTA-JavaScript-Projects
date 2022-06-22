@@ -105,13 +105,56 @@ function constant_function() { // created constant_function()
 
 /*========================
 END OF CONST KEYWORD ASSIGNMENT
-START OF LET KEYWORD ASSIGNMENT
+LET KEYWORD ASSIGNMENT
 ==========================*/
 
-var X1 = 99;
+var X1 = 99; // declared X1 globally
 console.log(X1);
 {
-    let X1 = 88;
+    let X1 = 88; // declared X1 in a block scope only can use const and let keywrod to do that
     console.log(X1);
 }
-console.log(X1);
+console.log(X1); // shows that it can't access the variable declared in the block scope
+
+/*==========================
+END OF KEYWORD ASSIGNMENT
+RETURN STATEMENT CHALLENGE
+============================*/
+
+let c = returnPracticeFunction(6, 9); // declared c variable and assigned it the value of said function with arguments 6 and 9
+document.getElementById("Return").innerHTML = c; // This will display the result in the variable c's value
+function returnPracticeFunction(a, b) { // created returnPracticeFunction with parameters a and b that pull the arguments from the variable that is invoking it
+    return a * b; // then those arguments are multiplied and the sum is returned as the value to variable c
+}
+
+/*===========================
+END OF KEYWORD ASSIGNMENT
+OBJECTS AS DATA STRUCTURES USING PROPERTIES AND MEHTODS PRACTICE/DEMO
+=============================*/
+
+let car = { // created the object called car
+    make: "Dodge ", // creating different properties, this is a state
+    model: "Viper ",
+    year: "2021 ",
+    color: "red ",
+    description: function () {
+        return "The car is a " + this.year + this.color + this.make + this.model;
+    }
+};
+document.getElementById("Car_Object").innerHTML = car.description();
+
+/*=============================
+END OF OBJECTS AS DATA STRUCTURES USING PROPERTIES AND METHODS PRACTICE/DEMO
+OBJECT ASSIGNMENT
+===============================*/
+
+let mug = { // created the object called mug
+    material: "clay ",
+    handle: "medium ",
+    shape: "round ",
+    depth: "4in ",
+    description: function () {
+        return "The mug is a made of " + this.material + "with a " + this.handle + "sized handle. The shape is: " + this.shape + "and the depth is: " + this.depth;
+    }
+};
+document.getElementById("Mug_Object").innerHTML = mug.description();

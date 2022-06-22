@@ -70,9 +70,32 @@ function searchFunction() { // created searchFunction
     document.getElementById("Search").innerHTML = text.search('position'); // made use of search() method to specify where the designated word starts in the string
 }
 
+function repFunction() { // created function repFunction
+    var text = document.getElementById("Replace").innerHTML; // created variable text with the value of the element with the ID "Replace"
+    document.getElementById("Replace").innerHTML = text.replace("good", 'bad'); // replaced the specified word from good to bad.
+} // note: when the specified id is obtained and created as the value for the variable, it takes everything within it. There is only one "good" word but if there were multiple what happens?
+
 /*================================
 END OF MORE METHODS CHALLENGE
-START OF
+START OF NUMBER METHODS PRACTICE/DEMO
 ==================================*/
 
+function string_Method() { // created string_Method
+    var X = 182; // created variable with a number data type
+    document.getElementById('Numbers_to_string').innerHTML = X.toString(); // pulls the number value from the variable and utilizes the toString() method to conver it into to a string, so it would go from 182 to '182'
+}
 
+/*===============================
+END OF NUMBER METHODS PRACTICE/DEMO
+START OF NUMBER METHODS ASSIGNMENT
+=================================*/
+
+function stringFunction() {
+    var b = 99999999;
+    document.getElementById("numToString").innerHTML = b.toString();
+}
+
+/*===============================
+END OF NUMBER METHODS ASSIGNMENT
+START OF
+=================================*/

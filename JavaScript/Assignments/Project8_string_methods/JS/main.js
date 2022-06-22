@@ -122,6 +122,11 @@ function precisionFunction() { // created precisionFunction
 
 /*====================================
 END OF TOPRECISION METHOD ASSIGNMENT
-START OF
+START OF NEW METHODS CHALLENGE FOR NUMBER METHODS
 ======================================*/
+
+/* In this challenge you'll research and describe (1) toFixed() Method and (2) valueOf() method.
+1) tofixed() Method: is a number method which returns a string, with the number written with a specified number of decimals, it also rounds a number to that given number of digits.
+2) valueOf() Method: 
+*/
 

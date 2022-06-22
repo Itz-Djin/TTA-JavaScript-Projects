@@ -25,7 +25,7 @@ function callLoopFunction() {
     }
 
     document.getElementById("Looper").innerHTML = text;
-    
+
 }
 
 /*=============
@@ -67,7 +67,7 @@ function cat_pics() { // created cat_pics() function
     var Cat_Picture = []; // created object Cat_Picture
     Cat_Picture[0] = "sleeping"; // This and the below assignments are the properties of the Cat_Picture object
     Cat_Picture[1] = "playing";
-    Cat_Picture[2] = "eating"; 
+    Cat_Picture[2] = "eating";
     Cat_Picture[3] = "purring";
     document.getElementById("Cat").innerHTML = "In this picture, the cat is " + Cat_Picture[2] + ".";
 }
@@ -77,12 +77,28 @@ END ARRAY PRACTICE/DEMO
 DOCUMENT.GETELEMENTBYID().INNERHTML ASSSIGNMENT
 ===============*/
 
-function array_Function() {
-    var Glasses = [];
-    Glasses[0] = " Ray-Ban ";
+function array_Function() { // created array_Function()
+    var Glasses = []; // created an array
+    Glasses[0] = " Ray-Ban "; // Initialized the array with index 0-4
     Glasses[1] = " Gucci ";
     Glasses[2] = " Tom Ford ";
     Glasses[3] = " Oakley ";
     Glasses[4] = " Ace & Tate "
-    document.getElementById("Array").innerHTML = "Some of the top glasses manufacturers are " + Glasses[0] + "and"  + Glasses[1];
+    document.getElementById("Array").innerHTML = "Some of the top glasses manufacturers are " + Glasses[0] + "and" + Glasses[1];
+}
+
+/*=====================
+END OF DOCUMENT.GETELEMENTBYID().INNERHTML ASSSIGNMENT
+CONST KEYWORD ASSIGNMENT
+=======================*/
+
+function constant_function() { // created constant_function()
+    const Musical_Instrument = { // created Musical_Instrument object with various properties (Key:Value Pairs)
+        type: "guitar",
+        brand: "Fender",
+        color: "black"
+    };
+    Musical_Instrument.color = "blue"; // Changed the value of the color key to value black
+    Musical_Instrument.price = "$900"; // Added another property with name of price and value of $900
+    document.getElementById("Constant").innerHTML = "The cost of the " + Musical_Instrument.type + " was " + Musical_Instrument.price;
 }

@@ -97,5 +97,31 @@ function stringFunction() {
 
 /*===============================
 END OF NUMBER METHODS ASSIGNMENT
-START OF
+START OF TOPRECISION METHOD PRACTICE/DEMO
 =================================*/
+
+function precision_Method() { // created precision_Method
+    var X = 12938.3012987376112; // created variable with a nubmer value
+    document.getElementById("Precision").innerHTML = X.toPrecision(10); // Implemented the toPrecision() method on designated variable
+}
+
+/*================================
+END OF TOPRECISION METHOD PRACTICE/DEMO
+START OF TOPRECISION METHOD ASSIGNMENT
+==================================*/
+
+function precisionFunction() { // created precisionFunction
+    var D = 9.123456789; // created variable D with number value
+    document.getElementById("Precision_Assignment").innerHTML = D.toPrecision(10) + // invoked toPrecision() method multiple times to show its use, each time shows how many numbers are used with the variable. if 10 has a number in the ones place then a decimal and 9 preceding numbers
+        "<br>" + D.toPrecision(9) +
+        "<br>" + D.toPrecision(7) +
+        "<br>" + D.toPrecision(5) +
+        "<br>" + D.toPrecision(3) +
+        "<br>" + D.toPrecision(1);
+}
+
+/*====================================
+END OF TOPRECISION METHOD ASSIGNMENT
+START OF
+======================================*/
+

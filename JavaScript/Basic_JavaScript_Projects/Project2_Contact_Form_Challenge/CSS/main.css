@@ -1,0 +1,42 @@
+.container {
+    background-color: rgb(102, 53, 20);
+    padding: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.form-container {
+    background-color: #abb;
+    padding: 15px;
+    margin: 5px 150px;
+    border-radius: 5px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 5px 0px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: aqua;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin:15px 0px 0px 0px;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(8, 155, 155, 0.842);
+    color: white;
+}

@@ -7,16 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <script src="JS/main.js" defer></script>
+    <link rel="stylesheet" href="CSS/main.css" type="text/css">
 </head>
 
 <body>
-
-    <form action="" method="post">
-        <input type="text" name="">
-        <input type="text">
-        <input type="text">
-        <input type="submit">
-    </form>
+    <div class="container">
+        <div class="form-container">
+            <form name="ContactForm" action="" onsubmit="return validateForm()" method="post">
+                <label for="fname">First name</label>
+                <input id="fname" type="text" name="fname" placeholder="First name">
+                <label for="lname">Last name</label>
+                <input id="lname" name="lname" type="text" placeholder="Last name">
+                <label for="Email">Email</label>
+                <input id="Email" name="Email" type="text" placeholder="Email">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

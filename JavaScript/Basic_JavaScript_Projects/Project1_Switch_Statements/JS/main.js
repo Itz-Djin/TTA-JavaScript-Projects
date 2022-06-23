@@ -66,11 +66,11 @@ function animalFunction() { // Created animalFunction()
 
 // Canvas Challenge
 var canvas = document.getElementById("Canvas"); // created a variable that makes changes to the canvas element
+var c = canvas.getContext('2d'); // pull the getContext method() applies it to our canvas variable and we declared those methods to a new variable c for short hand of context
 
 canvas.width = window.innerWidth; // specifies the width of our canvas element
 canvas.height = window.innerHeight; // specifies the height of our canvas element
 
-var c = canvas.getContext('2d'); // pull the getContext method() applies it to our canvas variable and we declared those methods to a new variable c for short hand of context
 
 c.fillStyle = 'rgba(255, 0, 0, 0.5)';
 c.fillRect(900, 100, 500, 500); // fillRect() function takes four values: x, y, width, height. coordinates begin in the top right of canvas element.
@@ -104,3 +104,11 @@ for (var i = 0; i < 50; i++) { // created a for loop that will iterate the block
     c.strokeStyle = 'blue'; // The property strokeStyle allows us to give a color
     c.stroke(); // creates the actual line we see
 }
+
+// Gradient Color Challenge
+var grd = c.createLinearGradient(0, 0, 170, 0);
+grd.addColorStop(0, "Green");
+grd.addColorStop(0.5, "Grey");
+grd.addColorStop(1, "Red");
+c.fillStyle = grd;
+c.fillRect(20, 20, 150, 100);

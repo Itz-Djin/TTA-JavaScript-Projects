@@ -12,6 +12,7 @@ function count_To_Ten() { // created function count_To_Ten
     document.getElementById("Counting_to_Ten").innerHTML = Digit; // Displays the variable to the designated HTML element
 }
 
+
 /*=============
 END LOOPS PRACTICE/DEMO
 LOOPS ASSIGNMENT

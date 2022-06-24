@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function Challenge</title>
+</head>
+
+<body>
+    <p id="standardNote"></p>
+    <p id="arrowFunction"></p>
+<script>
+    function myFunction(a, b, c, d) {
+        return a * b + c / d; 
+    }
+    document.getElementById('standardNote').innerHTML = myFunction (10, 5, 50, 2);
+    arrowFunction = (a, b, c, d) => a * b + c / d;
+    document.getElementById('arrowFunction').innerHTML = arrowFunction(10, 5, 50, 2);
+</script>
+</body>
+
+</html>

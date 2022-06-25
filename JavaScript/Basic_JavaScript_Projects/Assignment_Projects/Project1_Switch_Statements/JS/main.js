@@ -96,7 +96,7 @@ c.strokeStyle = 'blue';
 c.stroke();
 */
 
-for (var i = 0; i < 50; i++) { // created a for loop that will iterate the block of code 50 times, end product will have 50 circles (arcs) created in our canvas element
+for (var i = 0; i < 15; i++) { // created a for loop that will iterate the block of code 50 times, end product will have 50 circles (arcs) created in our canvas element
     var x = Math.random() * window.innerWidth; // declares variable x, invokes the Math.random() method giving us a random number multiplied to the width of the canvas, generating a random circle each iteration
     var y = Math.random() * window.innerHeight; // same as the variable x but declared y for the height, generating 50 random circles
     c.beginPath(); // Starts the path for the circles

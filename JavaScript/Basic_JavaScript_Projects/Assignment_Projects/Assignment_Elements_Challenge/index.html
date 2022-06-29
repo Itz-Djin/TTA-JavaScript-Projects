@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements Challenge</title>
+</head>
+
+<body>
+    <p id="practice"></p>
+
+    <script>
+        const comment = document.createComment("Random Comment");
+        document.body.appendChild(comment);
+        document.getElementById('practice').innerHTML = "A comment was added to this document, but as you know, comments in programming are invisible.";
+    </script>
+</body>
+
+</html>

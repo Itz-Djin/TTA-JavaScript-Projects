@@ -1,0 +1,152 @@
+/* =====================
+FADE CHALLENGE 
+========================*/
+body {
+    opacity: 1;
+    transition: 1s opacity;
+    width: 99vw;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.container {
+    height: 100vh;
+    background-color: aqua;
+    margin-top: 15px;
+    position: relative;
+}
+
+.formContainer {
+    background-color: rgb(209, 103, 103);
+    width: 25%;
+    height: 25%;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.phoneForm input[type='text'] {
+    padding: 20px;
+    border-radius: 50px;
+}
+
+
+body.fade-out{
+    opacity: 0;
+    transition: none;
+}
+
+/*=====================
+POPUP CONTACT FORM CHALLENGE 
+=======================*/
+.btnPop {
+    background-color: rgb(209, 103, 103);
+    color: rgb(81, 87, 87);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+input[type='submit']:hover,
+button[type='button']:hover {
+    background-color: rgb(255, 127, 127);
+    border-color: rgb(255, 127, 127);
+    border-radius: 150px;
+}
+
+.popUpForm {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+    bottom:  50%;
+    border: 3px solid #666;
+    z-index: 10;
+}
+
+
+.modal {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #aaa;
+}
+
+.modal label {
+    font-weight: 600;
+}
+
+.modal input[type='text']:focus,
+.modal input[type='email']:focus {
+    outline: 1px solid rgba(255, 127, 127, 0.8);
+    background-color: #ddd;
+}
+
+.modal input[type='text'],
+.modal input[type='email'] {
+    width: 90%;
+    padding: 5px;
+    margin: 5px auto;
+    border-radius: 100px;
+    border: none;
+}
+
+/* =======================
+VW UNIT CHALLENGE 
+==========================*/
+.vw-challenge {
+    font-size: 5vw;
+    text-align: center;
+    background-color: #aaa;
+    color: rgb(0, 255, 255);
+    margin: 0;
+}
+
+/* =======================
+ ANIMATION CHALLENGE
+==========================*/
+.animated {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 127, 127);
+    position: absolute;
+    top: 50%;
+    animation: myMove 19s infinite;
+}
+
+@keyframes myMove {
+    0% {left: 0px;}
+    25% {left: 94%;}
+    50% {left: 25%;}
+    75% {left: 94%;}
+    100% {left: 0%;}
+}
+
+/* =======================
+ ZOOM IN AND OUT CHALLENGE
+==========================*/
+.antImg {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+}
+
+.antImg:hover {
+    animation: zoom 5s forwards;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}

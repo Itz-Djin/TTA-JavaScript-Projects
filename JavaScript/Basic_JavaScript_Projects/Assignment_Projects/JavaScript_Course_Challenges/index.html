@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Challenge</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+
+<body>
+    <!-- VW Unit Challeng-->
+    <!-- set the font size using the vw unit -->
+    <h1 class="vw-challenge">Welcome to this page!</h1>
+    <div class="container">
+        <div class="animated"></div>
+        <button class="btnPop" onclick="openForm()">Click for Form</button>
+
+        <!-- Popup contact form challenge -->
+        <div class="popUpForm" id="tryForm">
+            <form class="modal" action="">
+                <h1>Contact Me!</h1>
+
+                <label for="fName">First Name:</label>
+                <input type="text" placeholder="First Name" name="fName" required>
+                <label for="lName">Last Name:</label>
+                <input type="text" placeholder="Last Name" name="lName" required>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Email" name="Email" required>
+
+                <input type="submit" value="Submit">
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </div>
+    <!-- Form Challenge -->
+    <div class="container">
+        <div class="antImg"><img src="images/antDropletSmall.jpg" alt=""></div>
+        <div class="formContainer">
+            <form class="phoneForm" name="myForm" action="" onsubmit="return validateForm()">
+                <input type="text" name="phoneNum" placeholder="Enter Phone #">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

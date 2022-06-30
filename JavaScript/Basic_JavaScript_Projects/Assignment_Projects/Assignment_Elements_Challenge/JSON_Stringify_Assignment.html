@@ -13,6 +13,7 @@
     <p id="myBottle"></p>
     <p id="parsedBottle"></p>
     <p id="testLocal"></p>
+    <p id="testDB" ondblclick="dbFunction()">Click to change color to red</p>
 
     <script>
         //JavaScript dictionary object
@@ -36,6 +37,11 @@
 
         localStorage.setItem('material', 'stainless steel');
         document.getElementById('testLocal').innerHTML = localStorage.getItem('material');
+
+        //ondbclick event handler challenge
+        function dbFunction() {
+            document.getElementById('testDB').style.color = 'red';
+        }
     </script>
 </body>
 

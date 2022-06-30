@@ -38,8 +38,9 @@ li {
     margin: 0;
 }
 
-
-
+.remove {
+    padding-bottom: 5px;
+}
 
 
 #footer {

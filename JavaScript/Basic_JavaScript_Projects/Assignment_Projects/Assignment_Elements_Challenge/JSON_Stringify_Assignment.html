@@ -11,12 +11,14 @@
 <body>
 
     <p id="myBottle"></p>
+    <p id="parsedBottle"></p>
+    <p id="testLocal"></p>
 
     <script>
         //JavaScript dictionary object
         var bottle = {
             type: 'Hydro Flask',
-            material: 'stainles steel',
+            material: ' stainless steel',
             insulated: true,
             size: '32 oz',
         };
@@ -24,8 +26,16 @@
         //converting its key/value pairs into string data
         //JSONstring (variable name) is the variable we can reference for to access this method
         var JSONstring = JSON.stringify(bottle);
+        // where the above method turned our object into string]
+        //the below method takes the variable that applied the stringify() method
+        //and takes the now string, and parses, turning it back into its original object (as is the var from the start)
+        var JSONparse = JSON.parse(JSONstring)
         //displays the bottle dictionary object inside designated html element by identifyting the element through its id we assigned it
         document.getElementById('myBottle').innerHTML = JSONstring;
+        document.getElementById('parsedBottle').innerHTML = JSONparse.type;
+
+        localStorage.setItem('material', 'stainless steel');
+        document.getElementById('testLocal').innerHTML = localStorage.getItem('material');
     </script>
 </body>
 

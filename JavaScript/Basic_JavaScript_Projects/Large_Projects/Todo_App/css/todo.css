@@ -9,6 +9,15 @@ body {
     background-color: #aaa;
 }
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
 input {
     background-color: #2f2;
     padding-top: 30px;
@@ -27,4 +36,15 @@ li {
     font-size: 40px;
     list-style: none;
     margin: 0;
+}
+
+
+
+
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid black;
 }

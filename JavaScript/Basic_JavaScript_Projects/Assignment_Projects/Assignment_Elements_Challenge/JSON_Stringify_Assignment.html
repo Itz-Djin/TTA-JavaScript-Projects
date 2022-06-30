@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON.Stringify() Assignment</title>
+</head>
+
+<body>
+
+    <p id="myBottle"></p>
+
+    <script>
+        //JavaScript dictionary object
+        var bottle = {
+            type: 'Hydro Flask',
+            material: 'stainles steel',
+            insulated: true,
+            size: '32 oz',
+        };
+        //applies JSON method stringfy() to the bottle dictionary object,
+        //converting its key/value pairs into string data
+        //JSONstring (variable name) is the variable we can reference for to access this method
+        var JSONstring = JSON.stringify(bottle);
+        //displays the bottle dictionary object inside designated html element by identifyting the element through its id we assigned it
+        document.getElementById('myBottle').innerHTML = JSONstring;
+    </script>
+</body>
+
+</html>

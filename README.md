@@ -2,9 +2,10 @@
 These are some small projects I made using JavaScript.
 
 ## Projects
-- [Pizza Menu](https://github.com/Itz-Djin/TTA-JavaScript-Projects/tree/main/JavaScript/Basic_JavaScript_Projects/Large_Projects/Pizza_Project)
-- [Tic-Tac-Toe Game](https://github.com/Itz-Djin/TTA-JavaScript-Projects/tree/main/JavaScript/Basic_JavaScript_Projects/Large_Projects/TicTacToe)
-- [Calculator](https://github.com/Itz-Djin/TTA-JavaScript-Projects/tree/main/JavaScript/Basic_JavaScript_Projects/Large_Projects/Calculator_Project)
+- [Pizza Menu](https://github.com/Itz-Djin/TTA-JavaScript-Projects/tree/main/JavaScript/Basic_JavaScript_Projects/Large_Projects/Pizza_Project) 🍕
+- [Tic-Tac-Toe Game](https://github.com/Itz-Djin/TTA-JavaScript-Projects/tree/main/JavaScript/Basic_JavaScript_Projects/Large_Projects/TicTacToe) 🎲
+- [Calculator](https://github.com/Itz-Djin/TTA-JavaScript-Projects/tree/main/JavaScript/Basic_JavaScript_Projects/Large_Projects/Calculator_Project) 🧮
+- [ToDo App](https://github.com/Itz-Djin/TTA-JavaScript-Projects/tree/main/JavaScript/Basic_JavaScript_Projects/Large_Projects/Todo_App) ✅
 
 ### Pizza Menu
 This project is a menu used to order pizza with various selection of toppings. It then takes the input information and calculates a price for the order.
@@ -14,3 +15,6 @@ The classic game of tic-tac-toe. It randomly rolls dice to select which of the t
 
 ### Calculator
 A basic 4 function calculator. Users can add, subtract, multiply, and divide on a sleek web version of a calculator
+
+### ToDo App
+A simple ToDo App that allows the user to use the input field to "add item" submitting their task. Upon refreshing the page loads their task and when they complete their task they can click the "x" button to remove it from the list.

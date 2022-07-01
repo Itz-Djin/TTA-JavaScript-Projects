@@ -1,10 +1,10 @@
 # TTA-JavaScript-Projects
 These are some small projects I made using JavaScript.
 
-##Projects
-- Pizza Menu
-- Tic-Tac-Toe Game
-- Calculator
+## Projects
+- [Pizza Menu](https://github.com/Itz-Djin/TTA-JavaScript-Projects/tree/main/JavaScript/Basic_JavaScript_Projects/Large_Projects/Pizza_Project)
+- [Tic-Tac-Toe Game](https://github.com/Itz-Djin/TTA-JavaScript-Projects/tree/main/JavaScript/Basic_JavaScript_Projects/Large_Projects/TicTacToe)
+- [Calculator](https://github.com/Itz-Djin/TTA-JavaScript-Projects/tree/main/JavaScript/Basic_JavaScript_Projects/Large_Projects/Calculator_Project)
 
 ### Pizza Menu
 This project is a menu used to order pizza with various selection of toppings. It then takes the input information and calculates a price for the order.
